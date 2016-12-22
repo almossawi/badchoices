@@ -1,0 +1,341 @@
+html {
+  font-size: 12px;
+}
+
+.viking-prh-logo {
+  width: 144px;
+  height: 50px;
+}
+
+.john-murray-logo {
+  width: 41px;
+  height: 50px;
+}
+
+.covers {
+  max-width: 1100px;
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 60px auto auto auto;
+}
+ 
+.us-cover,
+.uk-cover {
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto 10px auto;
+  border: 1px solid #c6e0eb;
+  clear: both;
+}
+
+.margie {
+  width: 100%;
+  margin: 30px auto 30px auto;
+}
+
+.book-cover {
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+}
+
+.quote {
+  opacity: 0.7;
+  border-left: 3px solid #ccc;
+  margin: 20px 0 0 40px;
+  width: 90%;
+}
+
+.serif {
+  font-family: 'Old Standard TT', 'PT Serif', Georgia, Times, 'Times New Roman', serif;  
+}
+
+.row {
+  padding: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#mc_embed_signup {
+    width: 100% !important;
+}
+
+#mc_embed_signup input.email,
+#mc_embed_signup input.button {
+    display: inline-block !important;
+}
+
+#mc_embed_signup input.email {
+    padding: 5px 0 !important;
+    border-color: #ccc;
+}
+
+#mc_embed_signup input.button {
+    border-radius: 0 !important;
+}
+
+p.business-card {
+  line-height: 22px !important;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+
+.outro {
+  margin: 120px auto 15px auto;
+}
+
+.outro p {
+  line-height: 21px !important;
+  font-size: 1.4rem;
+}
+
+a.tiny-button,
+a:active.tiny-button, 
+a:link.tiny-button, 
+a:visited.tiny-button {
+  margin: 0 15px 0 15px;
+  text-decoration: none;
+}
+
+.endorsement {
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.viking,
+.john-murray,
+.east-asian,
+.contacts,
+.mailing-list,
+.author {
+  margin-top: 100px;
+}
+
+.cover {
+   max-width: 600px;
+   width: 100%;
+   margin: auto;
+}
+
+.from-author {
+  text-align: justify;
+  font-size: 1.5rem;
+  width: 90%;
+  max-width: 520px;
+  margin: auto auto 20px auto;
+}
+
+.from-author-first {
+  margin: 30px auto 20px auto;
+}
+
+.opening-row {
+  padding-top: 30px;
+  background-color: #f9f9f9;
+  background-image: url(../images/crossword.png);
+  border-top: 1px solid #e9e8e8;
+  border-bottom: 1px solid #e9e8e8;
+}
+
+.closing-row {
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.prose {
+  max-width: 770px;
+  margin: 0 auto 20px auto;
+  width: 90%;
+}
+
+.anchor i {
+    color: #525151;
+    font-size: 12px;
+}
+
+a, a:active, a:link, a:visited {
+  cursor: pointer;
+  color: #f0642e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p.footer {
+    font-size: 1.5rem;
+    line-height: 24px;
+    margin: 20px auto 20px auto;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+html, body {
+    background: white;
+    color: black;
+    font-size: 10px;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  color: black;
+  font-family: 'Old Standard TT', 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+}
+.main-container {
+    margin: auto;
+    width: 100%;
+}
+
+p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+
+sup, sub {
+    font-size: 13px;
+    position: relative;
+    top: -0.4em;
+    vertical-align: baseline;
+}
+
+sub {
+    top: 0.4em;
+}
+
+.underline {
+    border-bottom: 1px solid #ccc;
+}
+
+/* ribbons 
+   http://codepen.io/eode9/pen/twkKm
+*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.corner-ribbon{
+  font-size: 1.6rem;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  width: 300px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  z-index: 99999;
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow,
+.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top{
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+}
+
+.corner-ribbon.top-left{
+  top: 45px;
+  left: -78px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left{
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right{
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Colors */
+
+.corner-ribbon.white{background: #f0f0f0; color: #555;}
+.corner-ribbon.black{background: #333;}
+.corner-ribbon.grey{background: #999;}
+.corner-ribbon.blue{background: #39d;}
+.corner-ribbon.green{background: #2c7;}
+.corner-ribbon.turquoise{background: #1b9;}
+.corner-ribbon.purple{background: #95b;}
+.corner-ribbon.red{background: #f64444;}
+.corner-ribbon.orange{background: #f0642e;}
+.corner-ribbon.yellow{background: #ec0;}
+
+
+@media (max-width: 500px) {
+  .quote {
+    margin: 20px 0 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .endorsement {
+    margin-top: 80px;
+  }
+}
+
+#rhglobalprivacy {
+  border-top: 1px solid #ccc !important;
+  font-weight: normal !important;
+  font-family: 'Open Sans', Arial !important;
+  opacity: 0.9 !important;
+}
+
+#rhglobalprivacy a {
+  color: #f0642e !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+#rhglobalprivacy div.txt {
+  font-size: 13px !important;
+  left: 23px !important;
+}
+
