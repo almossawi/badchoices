@@ -8,6 +8,13 @@
     //positionPlateGuy();
     //showHideEndorsement();
 
+    $('a.shorts').on('click',function(e) {
+      $('html, body').animate({
+          scrollTop: $('#shorts-row').offset().top
+      }, 500);
+      return false;
+    });
+
     $('a.preorder').on('click',function(e) {
       $('html, body').animate({
           scrollTop: $('#viking').offset().top

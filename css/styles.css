@@ -50,6 +50,34 @@ html {
   font-family: 'Old Standard TT', 'PT Serif', Georgia, Times, 'Times New Roman', serif;  
 }
 
+.read-latest {
+  font-size: 2rem;
+}
+
+.shorty-gifs {
+  height: 260px;
+  margin: 20px 15px 0 15px;
+}
+
+.shorty-gifs.inactive {
+  opacity: 0.3;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.shorts-row {
+  font-size: 2rem;
+}
+
+.shorts-row .meta {
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
 .row {
   padding: 0 !important;
   margin-left: 0 !important;
@@ -57,21 +85,21 @@ html {
 }
 
 #mc_embed_signup {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 #mc_embed_signup input.email,
 #mc_embed_signup input.button {
-    display: inline-block !important;
+  display: inline-block !important;
 }
 
 #mc_embed_signup input.email {
-    padding: 5px 0 !important;
-    border-color: #ccc;
+  padding: 5px 0 !important;
+  border-color: #ccc;
 }
 
 #mc_embed_signup input.button {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 p.business-card {
@@ -151,8 +179,8 @@ a:visited.tiny-button {
 }
 
 .anchor i {
-    color: #525151;
-    font-size: 12px;
+  color: #525151;
+  font-size: 12px;
 }
 
 a, a:active, a:link, a:visited {
@@ -166,19 +194,19 @@ a:hover {
 }
 
 p.footer {
-    font-size: 1.5rem;
-    line-height: 24px;
-    margin: 20px auto 20px auto;
-    font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 24px;
+  margin: 20px auto 20px auto;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 html, body {
-    background: white;
-    color: black;
-    font-size: 10px;
-    font-family: 'PT Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background: white;
+  color: black;
+  font-size: 10px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -189,8 +217,8 @@ h1 {
   font-weight: 300;
 }
 .main-container {
-    margin: auto;
-    width: 100%;
+  margin: auto;
+  width: 100%;
 }
 
 p {
@@ -200,18 +228,18 @@ p {
 }
 
 sup, sub {
-    font-size: 13px;
-    position: relative;
-    top: -0.4em;
-    vertical-align: baseline;
+  font-size: 13px;
+  position: relative;
+  top: -0.4em;
+  vertical-align: baseline;
 }
 
 sub {
-    top: 0.4em;
+  top: 0.4em;
 }
 
 .underline {
-    border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 /* ribbons 
@@ -313,9 +341,17 @@ sub {
   .quote {
     margin: 20px 0 0 20px;
   }
+
+  .read-latest {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 767px) {
+  .covers {
+    margin: 120px auto auto auto;
+  }
+
   .endorsement {
     margin-top: 80px;
   }
@@ -338,4 +374,3 @@ sub {
   font-size: 13px !important;
   left: 23px !important;
 }
-
