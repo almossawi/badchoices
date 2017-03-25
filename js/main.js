@@ -10,7 +10,7 @@
 
     $('a.shorts').on('click',function(e) {
       $('html, body').animate({
-          scrollTop: $('#shorts-row').offset().top
+          scrollTop: $('#short-pieces').offset().top
       }, 500);
       return false;
     });

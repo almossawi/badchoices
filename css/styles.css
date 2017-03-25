@@ -59,6 +59,10 @@ html {
   margin: 20px 15px 0 15px;
 }
 
+.shorty-caption {
+  margin-bottom: 25px;
+}
+
 .shorty-gifs.inactive {
   opacity: 0.3;
 }
@@ -67,11 +71,11 @@ html {
   opacity: 0.5;
 }
 
-.shorts-row {
+.short-pieces {
   font-size: 2rem;
 }
 
-.shorts-row .meta {
+.short-pieces .meta {
   font-size: 1.5rem;
   font-style: italic;
   opacity: 0.5;
