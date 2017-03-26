@@ -5,9 +5,6 @@
   global.width = $(window).width();
 
   $('img.cover').ready(function() {
-    //positionPlateGuy();
-    //showHideEndorsement();
-
     $('a.shorts').on('click',function(e) {
       $('html, body').animate({
           scrollTop: $('#short-pieces').offset().top
@@ -76,21 +73,5 @@
         .duration(1000)
           .style('opacity', 1);
     }
-
-    //console.log(h, h_image);
   }
-
-  /*window.onresize = function(event) {
-    if($(window).width() != global.width) {
-      // update width
-      global.width = $(window).width();
-
-      positionPlateGuy();
-      showHideEndorsement();
-    }
-  };
-  
-  window.onscroll = function() {
-    showHideEndorsement();
- };*/
 }());

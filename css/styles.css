@@ -13,7 +13,6 @@ html {
 }
 
 .covers {
-  max-width: 1100px;
   width: 100%;
   font-size: 1.3rem;
   margin: 60px auto auto auto;
@@ -22,9 +21,8 @@ html {
 .us-cover,
 .uk-cover {
   width: 100%;
-  max-width: 450px;
+  max-width: 1000px;
   margin: 10px auto 10px auto;
-  border: 1px solid #c6e0eb;
   clear: both;
 }
 
@@ -146,9 +144,9 @@ a:visited.tiny-button {
 }
 
 .cover {
-   max-width: 600px;
-   width: 100%;
-   margin: auto;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
 }
 
 .from-author {
@@ -342,16 +340,16 @@ sub {
 
 
 @media (max-width: 500px) {
-  .quote {
-    margin: 20px 0 0 20px;
-  }
-
   .read-latest {
     font-size: 1.6rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
+  .quote {
+    margin: 20px 0 0 20px;
+  }
+
   .covers {
     margin: 120px auto auto auto;
   }
