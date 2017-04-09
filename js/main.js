@@ -1,8 +1,10 @@
 (function() {
   'use strict'
 
-  var global = {};
-  global.width = $(window).width();
+  var args = {};
+  args.width = $(window).width();
+
+  resize();
 
   $('img.cover').ready(function() {
     $('a.shorts').on('click',function(e) {
@@ -27,51 +29,13 @@
     });
   });
 
-  function showHideEndorsement() {
-    var doc = document.documentElement;
-    var scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-    var opacity = d3.select('.endorsement')
-      .style('opacity');
-        
-    if (scrollTop > Number.parseInt(d3.select('.cover').style('margin-top')) - 110 && opacity !== 0) {
-      d3.select('.endorsement')
-        .transition()
-        .duration(500)
-        .style('opacity', 0);
-    }
-    else if(opacity !== 1) {
-      d3.select('.endorsement')
-        .transition()
-        .duration(500)
-        .style('opacity', 1);
-    }
-  }
+  window.onresize = resize;
 
-  function positionPlateGuy() {
-    var h = $(window).height();
-    var w = $(window).width();
-    var height_adjust_multiplier = 12;
-
-    var h_image = document.getElementsByClassName('cover')[0].height;
-    if(h_image == 0 || h_image == undefined) {
-      h_image = 720;
-    }
-
-   var plate_guy = d3.select('.cover')
-    .style('margin-top', function() {
-      var margin_top = h - h_image + (h_image / height_adjust_multiplier);
-      return (margin_top < 0)
-        ? (h < (h_image - 20))
-          ? '80px'
-          : 0
-        : margin_top + 'px';
-    })
-
-    if(plate_guy.style('opacity') == '0') {
-      plate_guy
-        .transition()
-        .duration(1000)
-          .style('opacity', 1);
+  function resize() {
+    if(window.innerWidth < 1400) {
+      d3.select('.caption').html('The UK and Commonwealth edition by John Murray');
+    } else {
+      d3.select('.caption').html('The UK and Commonwealth edition (left) and the North American edition (right)');
     }
   }
 }());

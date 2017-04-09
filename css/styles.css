@@ -2,6 +2,31 @@ html {
   font-size: 12px;
 }
 
+.c {
+  clear: both;
+}
+
+.caption {
+  letter-spacing: 0.025em;
+  color: #959595;
+  margin-bottom: 10px;
+}
+
+.press {
+  margin-bottom: 9px;
+}
+
+.press a img {
+  height: 40px;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.press img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
 .viking-prh-logo {
   width: 144px;
   height: 50px;
@@ -15,15 +40,20 @@ html {
 .covers {
   width: 100%;
   font-size: 1.3rem;
-  margin: 60px auto auto auto;
+  margin: 0 auto auto auto;
 }
  
-.us-cover,
-.uk-cover {
-  width: 100%;
-  max-width: 1000px;
-  margin: 10px auto 10px auto;
+.us-cover {
+  width: 49%;
+  max-width: 740px;
+  margin: 0 auto 10px auto;
   clear: both;
+}
+
+.uk-cover {
+  width: 49%;
+  max-width: 740px;
+  margin: 0 auto 10px auto;
 }
 
 .margie {
@@ -49,7 +79,13 @@ html {
 }
 
 .read-latest {
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+.reddit {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 70px;
 }
 
 .shorty-gifs {
@@ -341,7 +377,17 @@ sub {
 
 @media (max-width: 500px) {
   .read-latest {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .us-cover {
+    display: none;
+  }
+
+  .uk-cover {
+    width: 100%;
   }
 }
 
@@ -351,7 +397,7 @@ sub {
   }
 
   .covers {
-    margin: 120px auto auto auto;
+    margin: 70px auto auto auto;
   }
 
   .endorsement {
