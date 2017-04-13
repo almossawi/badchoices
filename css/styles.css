@@ -17,14 +17,14 @@ html {
 }
 
 .press a img {
-  height: 40px;
-  opacity: 0.5;
-  filter: grayscale(100%);
+  height: 50px;
+  /*opacity: 0.5;
+  filter: grayscale(100%);*/
 }
 
 .press img:hover {
   opacity: 1;
-  filter: grayscale(0);
+  /*filter: grayscale(0);*/
 }
 
 .viking-prh-logo {
@@ -45,14 +45,14 @@ html {
  
 .us-cover {
   width: 49%;
-  max-width: 740px;
+  max-width: 720px;
   margin: 0 auto 10px auto;
   clear: both;
 }
 
 .uk-cover {
   width: 49%;
-  max-width: 740px;
+  max-width: 720px;
   margin: 0 auto 10px auto;
 }
 
