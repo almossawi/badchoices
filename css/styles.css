@@ -181,6 +181,7 @@ p.endorsement-author {
 
 .nice-thing {
   margin-top: 70px;
+  margin-bottom: 15px;
 }
 
 .nice-thing .nice-quote {
@@ -304,6 +305,10 @@ sub {
 
 .underline {
   border-bottom: 1px solid #ccc;
+}
+
+.author-inline {
+  font-size: 1.1rem;
 }
 
 /* ribbons 
@@ -431,7 +436,7 @@ sub {
   }
 
   p.endorsement-author {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .covers {
@@ -441,18 +446,7 @@ sub {
 
 @media (max-width: 488px) {
   .covers {
-    margin: 140px auto auto auto;
-  }
-}
-
-@media (max-width: 380px) {
-  p.endorsement-quote {
-    line-height: 15px;
-    padding-bottom: 5px;
-  }
-
-  p.endorsement-author {
-    line-height: 12px;
+    margin: 136px auto auto auto;
   }
 }
 
