@@ -13,7 +13,7 @@ html {
 }
 
 .press {
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 .press a img {
@@ -40,7 +40,7 @@ html {
 .covers {
   width: 100%;
   font-size: 1.3rem;
-  margin: 0 auto auto auto;
+  margin: 70px auto auto auto;
 }
  
 .us-cover {
@@ -76,10 +76,6 @@ html {
 
 .serif {
   font-family: 'Old Standard TT', 'PT Serif', Georgia, Times, 'Times New Roman', serif;  
-}
-
-.read-latest {
-  font-size: 1.8rem;
 }
 
 .reddit {
@@ -164,10 +160,40 @@ a:visited.tiny-button {
 }
 
 .endorsement {
-  margin-top: 20px;
+  margin-top: 13px;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+p.endorsement-quote {
+  font-size: 1.9rem;
+  line-height: 19px;
+  padding-bottom: 5px;
+  margin: auto 6px auto 6px;
+}
+
+p.endorsement-author {
+  font-size: 1.3rem;
+  line-height: 17px;
+  margin: auto 6px auto 6px;
+}
+
+.nice-thing {
+  margin-top: 70px;
+}
+
+.nice-thing .nice-quote {
+  font-size: 1.8rem;
+  padding-bottom: 9px;
+  margin: auto 6px auto 6px;
+  line-height: 25px;
+}
+
+.nice-thing .nice-quote-author {
+  font-size: 1.3rem;
+  margin: auto 6px auto 6px;
+  line-height: 17px;
 }
 
 .viking,
@@ -374,13 +400,6 @@ sub {
 .corner-ribbon.orange{background: #f0642e;}
 .corner-ribbon.yellow{background: #ec0;}
 
-
-@media (max-width: 500px) {
-  .read-latest {
-    font-size: 1.7rem;
-  }
-}
-
 @media (max-width: 1400px) {
   .us-cover {
     display: none;
@@ -396,12 +415,44 @@ sub {
     margin: 20px 0 0 20px;
   }
 
-  .covers {
-    margin: 70px auto auto auto;
+  .endorsement {
+    margin-top: 65px;
   }
 
-  .endorsement {
-    margin-top: 77px;
+  .covers {
+    margin: 123px auto auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  p.endorsement-quote {
+    font-size: 1.3rem;
+    padding-bottom: 1px;
+  }
+
+  p.endorsement-author {
+    font-size: 1rem;
+  }
+
+  .covers {
+    margin: 119px auto auto auto;
+  }
+}
+
+@media (max-width: 488px) {
+  .covers {
+    margin: 140px auto auto auto;
+  }
+}
+
+@media (max-width: 380px) {
+  p.endorsement-quote {
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+
+  p.endorsement-author {
+    line-height: 12px;
   }
 }
 
