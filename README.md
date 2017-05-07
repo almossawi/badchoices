@@ -7,3 +7,4 @@ _Bad Choices_ is a book all about faster and slower ways of tackling everyday pr
 
 Links
 * [Errata](https://github.com/almossawi/badchoices/wiki/Errata)
+* [Chapter 1](https://bookofbadchoices.com/chapter1)
