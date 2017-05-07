@@ -406,11 +406,11 @@ sub {
 .corner-ribbon.yellow{background: #ec0;}
 
 @media (max-width: 1400px) {
-  .us-cover {
+  .uk-cover {
     display: none;
   }
 
-  .uk-cover {
+  .us-cover {
     width: 100%;
   }
 }
@@ -429,7 +429,7 @@ sub {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 701px) {
   p.endorsement-quote {
     font-size: 1.3rem;
     padding-bottom: 1px;
