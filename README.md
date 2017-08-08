@@ -13,6 +13,6 @@ _Bad Choices_ is a book all about faster and slower ways of tackling everyday pr
 
 “Always delighted when data becomes actionable knowledge. Some insights into putting this into daily action in all parts of life.” —Jean Ellefson, Chief of Staff, Research and Product Development, Xerox
 
-Links
+## Links
 * [Errata](https://github.com/almossawi/badchoices/wiki/Errata)
 * [Chapter 1](https://bookofbadchoices.com/chapter1)
