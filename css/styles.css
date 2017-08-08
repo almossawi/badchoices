@@ -2,6 +2,24 @@ html {
   font-size: 12px;
 }
 
+.twit {
+  margin: 0 10px 0 10px;
+}
+
+.geekdad {
+  margin: 0 10px 0 10px;
+}
+
+.bright {
+  height: 40px !important;
+  margin: 0 25px 0 25px;
+}
+
+.mit-sloan {
+  height: 40px !important;
+  margin: 0 25px 0 25px;
+}
+
 .c {
   clear: both;
 }
@@ -187,7 +205,7 @@ p.endorsement-author {
 .nice-thing .nice-quote {
   font-size: 1.8rem;
   padding-bottom: 9px;
-  margin: auto 6px auto 6px;
+  margin: auto 100px auto 100px;
   line-height: 25px;
 }
 
@@ -426,6 +444,10 @@ sub {
 
   .covers {
     margin: 123px auto auto auto;
+  }
+
+  .nice-thing .nice-quote {
+    margin: auto 20px auto 20px;
   }
 }
 

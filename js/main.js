@@ -32,7 +32,7 @@
 
   function update_caption() {
     if(window.innerWidth < 1400) {
-      d3.select('.caption').html('The UK and Commonwealth edition by John Murray');
+      d3.select('.caption').html('The North American edition by Viking');
     } else {
       d3.select('.caption').html('The UK and Commonwealth edition (left) and the North American edition (right)');
     }
