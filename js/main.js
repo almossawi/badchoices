@@ -39,18 +39,18 @@
   }
 
   function resize() {
-    if(window.innerWidth < 488) {
+    if(window.innerWidth < 830) {
       d3.select('p.endorsement-quote')
-        .html("<span class='serif'>&ldquo;</span>Perfect for anyone wanting to understand the basics of&nbsp;Computer&nbsp;Science.<span class='serif'>&rdquo;</span> <span class='author-inline'>&mdash;Cesar Hidalgo, Director, Collective Learning group, MIT&nbsp;Media&nbsp;Lab</span>");
+        .html("<span class='serif'>&ldquo;</span>One of the more clever ways of introducing computational thinking&nbsp;to&nbsp;the general public.<span class='serif'>&rdquo;</span> <span class='author-inline'>&mdash;<b>Vint&nbsp;Cerf</b>, Turing&nbsp;Award winner, Chief Internet Evangelist at&nbsp;Google</span>");
 
       d3.select('p.endorsement-author')
         .html('');
     } else {
       d3.select('p.endorsement-quote')
-        .html("<span class='serif'>&ldquo;</span>Perfect for anyone wanting to understand the basics of&nbsp;Computer&nbsp;Science.<span class='serif'>&rdquo;</span>");
+        .html("<span class='serif'>&ldquo;</span>One of the more clever ways of introducing computational thinking&nbsp;to&nbsp;the general public.<span class='serif'>&rdquo;</span>");
 
       d3.select('p.endorsement-author')
-        .html('&mdash;Cesar Hidalgo, Director of the Collective Learning group at&nbsp;the&nbsp;MIT&nbsp;Media&nbsp;Lab');
+        .html('&mdash;<b>Vint Cerf</b>, Turing Award winner, Chief Internet Evangelist at Google, a <i>Father of the Internet</i>');
     }
   }
 

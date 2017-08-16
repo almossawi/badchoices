@@ -2,6 +2,12 @@ html {
   font-size: 12px;
 }
 
+.nice-quote-author b,
+.endorsement-author b,
+.author-inline b {
+  font-family: Helvetica, Arial, 'Open Sans';
+}
+
 .twit {
   margin: 0 10px 0 10px;
 }
@@ -211,7 +217,7 @@ p.endorsement-author {
 
 .nice-thing .nice-quote-author {
   font-size: 1.3rem;
-  margin: auto 6px auto 6px;
+  margin: auto 55px auto 55px;
   line-height: 17px;
 }
 
@@ -466,7 +472,7 @@ sub {
   }
 }
 
-@media (max-width: 488px) {
+@media (max-width: 478px) {
   .covers {
     margin: 136px auto auto auto;
   }
