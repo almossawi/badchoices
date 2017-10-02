@@ -1,4 +1,4 @@
-![Bad Choices](https://bookofbadchoices.com/images/margie.png)
+![Bad Choices](https://bookofbadchoices.com/thebook/images/margie.png)
 
 # Bad Choices
 Source-code for https://bookofbadchoices.com
@@ -22,4 +22,6 @@ _Bad Choices_ is a book all about faster and slower ways of tackling everyday pr
 
 ## Links
 * [Errata](https://github.com/almossawi/badchoices/wiki/Errata)
-* [Chapter 1](https://bookofbadchoices.com/chapter1)
+* [Op-ed in Bright Magazine](https://brightreads.com/dont-just-teach-kids-how-to-code-teach-them-algorithms-too-cfa66941d896)
+* [This Week in Tech interview](http://www.twit.tv/tri/306)
+
