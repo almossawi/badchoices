@@ -1,9 +1,8 @@
 
 *.psd
-other
-
-shorts/curation-means-bias/images/hoare-orig.gif
-
 *.pdf
-
 errata/*
+fonts/*
+other
+shorts/curation-means-bias/images/hoare-orig.gif
+images/book-covers-old.jpg

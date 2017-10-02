@@ -1,0 +1,7 @@
+<div class='book-content'>
+  <p class='no-indent'>the above set of characters, we end up with something like the following diagram, where we first pair “f” and “j,” then we pair the result of that with “l,” and so on. Each column, starting from the second one, is one step of the algorithm.</p>
+  <p>When we rearrange the diagram as a tree, it all becomes clear. A character’s optimized binary code is the string that we get when we read off the bits from the topmost node—the <i>root</i><sup>*</sup> node—down to that character’s node. So in the tree below, any time we move left, we add a zero to a character’s binary code and anytime we move right, we add a one to it, which is why the letter “e” ends up with the two-bit long binary code 11 and the letter “f” ends up with the five-bit long binary code 10001. Assigning a one or a zero to a node’s children in the Huffman tree is done arbitrarily; that is “e” could have been coded as 01 instead of 11. While binary codes aren’t guaranteed to be unique, they are guaranteed to be optimal. In any case, the Huffman tree is sent to the receiver along with the message so that the receiver knows how to decode the message.</p>
+
+  <p class='footnote'><sup>*</sup> In computing, trees are drawn with their root at the top and their branches extending downward, unlike actual&nbsp;trees.</p>
+</div>
+<span class='page-number'>85</span>

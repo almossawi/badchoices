@@ -1,0 +1,9 @@
+<div class='book-content'>
+    <p class='no-indent'>table does precisely what an array does, in that it stores things in a collection, except it trades order (i.e., large black sock comes after small red sock) for near-immediate lookups, also referred to as <i>constant-time</i> lookups.<sup>*</sup></p>
+    <p>They are called constant time because the lookup no longer depends on the length of the array. Rather, its speed is independent of the length of the array. This observation is usually true, though not always. A lot of things in software are like that, to the chagrin of many a researcher and practitioner. There are no fundamental laws in software like there are in nature. In this example, we’re assuming that because of the small number of disparate socks, Morwenna’s synapses will fire so quickly that her reaction will be near immediate.</p>
+    <p>As we will see later on, most constant-time lookups happen when we are able to model a task by way of a formula, which eliminates the need to step through a task and <i>iterate</i> over all the items at hand.<sup>&dagger;</sup> With hash tables, that formula is known as a <i>hash function</i>. Its job is to put an item into a pile and then perhaps retrieve that</p>
+
+    <p class='footnote'><sup>*</sup> In this example, Morwenna doesn’t really care what order unmatched socks are in. All she cares about is that the socks are to one side. So the order is incidental. It is insignificant.<br />
+    <sup>&dagger;</sup> For example, finding the sum of the first n numbers would be slower if you were to iterate over those n numbers one by one, summing pairs of numbers each time. It would be much faster if you were to use a formula instead: <i>n × (n + 1) / 2</i>.</p>
+</div>
+<span class='page-number'>19</span>
