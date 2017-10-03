@@ -32,7 +32,9 @@
       },
 
       stop: function() {
-        $('.flipbook').turn('page', Math.max(1, $(this).slider('value') * 2 - 2));
+        // skip over cover page (you're dead to me, old friend, you're dead to me)
+        var page = Math.max(1, $(this).slider('value') * 2 - 2);
+        $('.flipbook').turn('page', page);
       }
     });
 
@@ -538,7 +540,16 @@
   });
 
   $(document).ready(function() {
-    var height = window.innerHeight - $('.press')[0].getBoundingClientRect().top;
+    $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+      if(data.country_code == 'GB'
+          || data.country_code == 'AU'
+          || data.country_code == 'NZ'
+        ) {
+        window.location = '/thebook';
+      }
+    });
+
+    var height = window.innerHeight - $('.press')[0].getBoundingClientRect().top + 1;
     $('.press')
       .css('height', height + 'px');
  
