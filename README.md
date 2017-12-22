@@ -27,4 +27,5 @@ _Bad Choices_ is a book all about faster and slower ways of tackling everyday pr
 * [Errata](https://github.com/almossawi/badchoices/wiki/Errata)
 * [Op-ed in Bright Magazine](https://brightreads.com/dont-just-teach-kids-how-to-code-teach-them-algorithms-too-cfa66941d896)
 * [This Week in Tech interview](http://www.twit.tv/tri/306)
+* [Metalearn podcast interview](http://www.metalearn.net/podcasts/ml98-ali-almossawi)
 
