@@ -151,7 +151,13 @@
 
             $(".right-arrow img")
               .show();
+
+            // hide the cover
+            setTimeout(function() {
+              book.turn('page', 3);
+            }, 100);
           }
+
           // on all pages, but the first, make sure we show the left arrow
           else if(page > 1) {
             $(".left-arrow img")
@@ -540,16 +546,46 @@
   });
 
   $(document).ready(function() {
-    $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
-      if(data.country_code == 'GB'
-          || data.country_code == 'AU'
-          || data.country_code == 'NZ'
-        ) {
-        window.location = '/thebook';
-      }
+    $.ajax({
+      url: 'https://freegeoip.net/json/?callback=?',
+      dataType: 'json',
+      success: geo_callback,
+      error: geo_timeout,
+      timeout: 1000
     });
+  });
 
-    var height = window.innerHeight - $('.press')[0].getBoundingClientRect().top + 1;
+  function geo_timeout() {
+    init();
+  }
+
+  function geo_callback(data) {console.log(data)
+    if(data.country_code === 'GB'
+        || data.country_code === 'AU'
+        || data.country_code === 'NZ'
+        || data.country_code === 'ZA') {
+        sorry();
+    } else {
+      init();
+    }
+  }
+
+  function sorry() {
+    $('#canvas')
+      .css('width', '100%');
+
+    $('.first-run-loading')
+      .css('display', 'none');
+
+    $('.sorry')
+      .css('display', 'block');
+  }
+
+  function init() {
+    var height = Math.max(
+      window.innerHeight - $('.press')[0].getBoundingClientRect().top + 1,
+      90);
+
     $('.press')
       .css('height', height + 'px');
  
@@ -571,30 +607,31 @@
     } else {
       console.log("html5 history not detected, using pushState");
     }
+  }
 
-    function event_listeners() {
-      $(".left-arrow img").on("click", function() {
-        $(".flipbook").turn("previous");
-        return false
-      });
-      $(".right-arrow img").on("click", function() {
-        $(".flipbook").turn("next");
-        return false
-      });
+  function event_listeners() {
+    $(".left-arrow img").on("click", function() {
+      $(".flipbook").turn("previous");
+      return false
+    });
 
-      $(".howto").live("click", function() {
-        $(".howto").fadeOut();
-      });
+    $(".right-arrow img").on("click", function() {
+      $(".flipbook").turn("next");
+      return false
+    });
 
-      $('.zoomable-art').live('mouseenter', function() {
-        var id = $(this).attr('data-id');
-        $('#pic' + id + '-zoom').fadeIn('slow');
-      });
+    $(".howto").live("click", function() {
+      $(".howto").fadeOut();
+    });
 
-      $('.zoomed-art').live('mouseleave', function() {
-        var id = $(this).attr('data-id');
-        $('#pic' + id + '-zoom').fadeOut('slow');
-      });
-    }
-  })
+    $('.zoomable-art').live('mouseenter', function() {
+      var id = $(this).attr('data-id');
+      $('#pic' + id + '-zoom').fadeIn('slow');
+    });
+
+    $('.zoomed-art').live('mouseleave', function() {
+      var id = $(this).attr('data-id');
+      $('#pic' + id + '-zoom').fadeOut('slow');
+    });
+  }
 }());

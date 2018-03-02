@@ -736,6 +736,16 @@ img {
   margin: 0 10px 0 10px;
 }
 
+.metalearn {
+  height: 30px !important; 
+  margin: -5px 18px 0 18px;
+}
+
+.new-scientist {
+  height: 50px !important;
+  margin: 0 30px 0 30px;
+}
+
 .bright {
   height: 40px !important;
   margin: 0 25px 0 25px;
@@ -744,4 +754,30 @@ img {
 .mit-sloan {
   height: 40px !important;
   margin: 0 0 0 10px;
+}
+
+.controls a {
+  color: #3a90f0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#pause {
+  display: none;
+}
+
+.sorry {
+  display: none;
+  color: #6f6f6f;
+  font-family: 'Open Sans';
+  font-size: 12pt;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 288px;
+  padding-bottom: 13px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
 }
