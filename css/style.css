@@ -716,6 +716,7 @@ img {
 .press {
   background-color: black;
   width: 100%;
+  min-width: 1000px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 40px auto 0 auto;
