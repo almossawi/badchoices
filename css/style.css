@@ -782,3 +782,31 @@ img {
   width: 100%;
   z-index: 99;
 }
+
+.subscribe-pink {
+  font-family: 'Gill Sans', 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 2px !important;
+  background-color: #e1306c !important;
+  letter-spacing: 0.01em;
+  width: 35% !important;
+  margin: 5px 0 10px 0;
+  min-width: 90px;
+  clear: both;
+  border: 0 none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: inline-block;
+  height: 42px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.subscribe-pink:hover {
+  filter: brightness(110%);
+}
